@@ -50,10 +50,6 @@ index = stats.find(" ")
 S = int(stats[0:index])
 n = int(stats[index:])
 
-# Parse first line of text file into size of buffer (S) and number of incoming network packets (n)
-# S = int(stats[0])
-# n = int(stats[2])
-
 # Check if constraints have been met.
 if S < 1 or S > 100000:
     raise Exception('Invalid buffer size')
