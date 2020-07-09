@@ -66,9 +66,6 @@ class Queue:
             return element
 
 
-# def check_tree(tree):
-
-
 # Make an array to hold lists of tree data.
 tree_data = []
 
