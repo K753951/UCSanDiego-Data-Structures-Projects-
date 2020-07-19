@@ -39,6 +39,10 @@ def in_order_traversal(tree, root_index, result):
         result.append(tree[left_node].key)
         result.append(tree[root_index].key)
 
+    # If node has no left ancestors, add root to result list.
+    else:
+        result.append(root_index)
+
     # If root node has grandchildren on the right, then recursively call function on right subtree
     # until terminal subtree reached.
     if right_node is not -1 and (tree[right_node].left_child is not -1 or tree[right_node].right_child is not -1):
